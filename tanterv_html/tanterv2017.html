@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="resources/img/mik_favico.png" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="resources/js/script.js"></script>
+	<title>PTE-MIK Mérnökinformatikus Bsc 2017 utáni tanterv</title>
+	<style>
+		.table td{
+			padding: 0.4rem;
+		}
+		.table th{
+			padding: 0.4rem;
+		}
+    .table td.fit, 
+    .table th.fit {
+        white-space: nowrap;
+        width: 1%;
+    }
+    tbody tr{
+      display: none !important;
+    }
+    td{
+      vertical-align: middle !important;
+    }
+    .show{
+      display: table-row-group !important;
+    }
+    .show1{
+      display: table-row !important;
+    }
+    #intrsz{
+      display: none;
+    }
+    #alkf{
+      display: none;
+    }
+    #rendszm{
+      display: none;
+    }
+	</style>
+  </head>
+  <body class="bg-light p-4" style="box-sizing: border-box; font-size: 0.8rem;">
+    <div
+      class="container-fluid bg-white border rounded border-secondary text-center w-75"
+    >
+      <div class="row">
+        <div class="col-12 p-2">
+          <img
+            class="img-fluid"
+            style="height: 150px"
+            src="resources/img/mik_logo.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+          <h3>Szakirány</h3>
+          <div class="btn-group spec p-2" role="group" aria-label="Basic example">
+            <button id="intrsz-btn" type="button" class="btn spec btn-outline-primary active">
+              Intelligens rendszerek
+            </button>
+            <button id="rendszm-btn" type="button" class="btn spec btn-outline-primary">
+              Rendszermérnök
+            </button>
+            <button id="alkf-btn" type="button" class="btn spec btn-outline-primary">
+              Alkalmazásfejlesztő
+            </button>
+          </div>
+		</div>
+		<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+          <h3>Félév</h3>
+          <div class="btn-group semester p-2" role="group" aria-label="Basic example">
+			      <button id="all-btn" type="button" class="btn semester btn-outline-secondary active">
+              Összes
+            </button>
+            <button id="1-btn" type="button" class="btn semester btn-outline-secondary">
+              1
+            </button>
+            <button id="2-btn" type="button" class="btn semester btn-outline-secondary">
+              2
+            </button>
+            <button id="3-btn" type="button" class="btn semester btn-outline-secondary">
+              3
+			      </button>
+			      <button id="4-btn" type="button" class="btn semester btn-outline-secondary">
+              4
+			      </button>
+            <button id="5-btn" type="button" class="btn semester btn-outline-secondary">
+              5
+            </button>
+            <button id="6-btn" type="button" class="btn semester btn-outline-secondary">
+              6
+			      </button>
+			      <button id="7-btn" type="button" class="btn semester btn-outline-secondary">
+              7
+            </button>
+          </div>
+        </div>
+	  </div>
+      <div class="row">
+        <div class="col-12">
+          <table
+            class="table table-sm-responsive table-md-responsive table-lg-responsive table-xl-responsive table-bordered table-hover w-100 p-2"
+          >
+            <thead class="thead-dark">
+              <tr>
+                <th>Név</th>
+                <th>Kód</th>
+                <th>1.</th>
+                <th>2.</th>
+                <th>3.</th>
+                <th>4.</th>
+                <th>5.</th>
+                <th>6.</th>
+                <th>7.</th>
+                <th>Feltétel</th>
+              </tr>
+			</thead>
+
+<!-- TERMESZETTUDOMANYI ALAPISMERETEK -->
+
+            <thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10">
+                Természettudományi alapismeretek
+              </th>
+            </thead>
+            <tbody>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Műszaki matematika 1.</td>
+                <td>IVB291MNMI</td>
+                <td class="bg-secondary text-light">v/6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Műszaki matematika 2.</td>
+                <td>IVB292MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">v/6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Műszaki matematika 1.</td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Hardverek villamosságtani alapjai</td>
+                <td>IVB286MNMI</td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Transzportfolyamatok modellezése</td>
+                <td>IVB287MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Problémaosztályok, algoritmusok</td>
+                <td>IVB364MNMI</td>
+                <td class="bg-secondary text-light">f/2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Bevezetés a számítástudományokba</td>
+                <td>IVB365MNMI</td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Alkalmazott matematika 1.</td>
+                <td>IVB007MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">f/6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Alkalmazott matematika 2.</td>
+                <td>IVB008MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Alkalmazott matematika 1.</td>
+              </tr>
+			</tbody>
+
+<!-- GAZDASAGI ES HUMAN ISMERETEK -->
+
+			<thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10">
+				Gazdasági és humán ismeretek
+              </th>
+            </thead>
+            <tbody>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Projektmenedzsment 1.</td>
+                <td>MSB341MNMI</td>
+				<td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Projektmenedzsment 2.</td>
+                <td>MSB342MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Projektmenedzsment 1.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Minőségbiztosítás 1.</td>
+                <td>MSB449MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Vállalkozási és munkaerőpiaci ismeretek</td>
+                <td>MSB448MNMI</td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Iparjogvédelem</td>
+                <td>IVB450MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Munka-, tűz- és egészségvédelem</td>
+                <td>MSB018MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+              </tr>
+			</tbody>
+
+<!-- SZAKMAI TORZSANYAG -->
+
+			<thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10">
+				Szakmai törzsanyag
+              </th>
+            </thead>
+            <tbody>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Informatika alapjai 1.</td>
+                <td>IVB183MNMI</td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Informatika alapjai 2.</td>
+                <td>IVB184MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Programozás 1.</td>
+                <td>IVB332MNMI</td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Web programozás 1.</td>
+                <td>IVB333MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Programozás 1.</td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Adatbázisok 1.</td>
+                <td>IVB334MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Programozás 2.</td>
+                <td>IVB305MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Programozás 1.</td>
+              </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Programozás 3.</td>
+                <td>IVB306MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> Programozás 2</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Szoftvertechnológia</td>
+                <td>IVB307MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/2</td>
+                <td></td>
+                <td></td>
+                <td>Programozás 3.</td>
+			        </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Számítógép hálózatok alapjai</td>
+                <td>IVB368MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Informatika alapjai 1.</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">IP alapú rendszerek és alkalmazások</td>
+                <td>IVB369MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Számítógép hálózatok alapjai</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Az informatika biztonság 1.</td>
+                <td>IVB165MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td>IP alapú rendszerek és alkalmazások</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Az informatika biztonság 2.</td>
+                <td>IVB166MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td>Az informatika biztonság 1.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Internet technológiák</td>
+                <td>IVB167MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td>Számítógép hálózatok alapjai</td>
+              </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Számítógép architektúrák 1.</td>
+                <td>IVB366MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Digitális technika</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Számítógép architektúrák 2.</td>
+                <td>IVB367MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Számítógép architektúrák 1.</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Operációs rendszerek</td>
+                <td>IVB186MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Számítógép architektúrák 1.</td>
+			        </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Vállalati információs rendszerek</td>
+                <td>IVB187MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td>Adatbázisok 1.</td>
+              </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Rendszerelmélet 1.</td>
+                <td>IVB352MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Műszaki matematika 2.</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Rendszerelmélet 2.</td>
+                <td>IVB353MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Rendszerelmélet 1.</td>
+              </tr>
+              <tr class="3">
+                <td class="text-left font-weight-bold">Vizuális programozás</td>
+                <td>IVB268MNMI</td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Programozás 1.</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Mérésadatgyűjtés és jelfeldolgozás</td>
+                <td>IVB269MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Vizuális programozás</td>
+              </tr>
+              <tr class="4">
+                <td class="text-left font-weight-bold">Autonóm Rendszerek Programozása</td>
+                <td>IVB270MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Digitális technika, Programozás 1.</td>
+              </tr>
+              <tr class="2">
+                <td class="text-left font-weight-bold">Eletronika 1. </td>
+                <td>IVB040MNMI</td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Digitális technika</td>
+              </tr>
+              <tr class="1">
+                <td class="text-left font-weight-bold">Digitális technika 1.</td>
+                <td>IVB033MNMI</td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+			</tbody>
+
+<!-- DIFFERENCIALT SZAKMAI ANYAG -->
+
+			<thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Differenciált szakmai anyag
+              </th>
+            </thead>
+<!-- INTELLIGENS RENDSZEREK -->
+            <tbody id="intrsz" class="show">
+              <tr class="5">
+                <td class="text-left font-weight-bold">PLC programozás</td>
+                <td>IVB195MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td>Mérésadatgyűjtés és jelfeldolgozás, Digitális technika</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Számítógép vezérelt irányítások</td>
+                <td>IVB196MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td>Rendszerelmélet 2., PLC programozás</td>
+              </tr>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Képfeldolgozás</td>
+                <td>IVB191MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td>Rendszerelmélet 1.</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Intelligens rendszerek</td>
+                <td>IVB192MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td></td>
+                <td>Rendszerelmélet 1.</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Robottechnika 1.</td>
+                <td>IVB354MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td>Digitális technika</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Robottechnika 2.</td>
+                <td>IVB355MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td>Robottechnika 1.</td>
+              </tr>
+            </tbody>
+<!-- ALKALMAZASFEJLESZTO -->
+            <tbody id="alkf">
+              <tr class="6">
+                <td class="text-left font-weight-bold">Programozás 4.</td>
+                <td>IVB003MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td>Programozás 2.</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Adatbázisok 2.</td>
+                <td>IVB004MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td></td>
+                <td>Adatbázisok 1.</td>
+              </tr>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Programozás 5.</td>
+                <td>IVB338MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td>Programozás 2.</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Programozási Paradigmák</td>
+                <td>IVB339MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td></td>
+                <td>Programozás 3.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Rendszerprogramozás</td>
+                <td>IVB340MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td>Programozás 3.</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Web alapú szoftverfejlesztés</td>
+                <td>IVB474MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td></td>
+                <td>Adatbázisok 1., Programozás 3.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Web programozás 2.</td>
+                <td>IVB475MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td>Web programozás 1., Adatbázisok 1.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Web design</td>
+                <td>IVB476MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/3</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+<!-- RENDSZERMERNOK -->
+            <tbody id="rendszm">
+              <tr class="5">
+                <td class="text-left font-weight-bold">Linux rendszergazda ismeretek</td>
+                <td>IVB252MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td>IP alapú rendszerek és alkalmazások</td>
+              </tr>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Felhő technológiák</td>
+                <td>IVB253MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/6</td>
+                <td>Linux rendszergazda ismeretek</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Windows rendszergazda ismeretek</td>
+                <td>IVB477MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td>IP alapú rendszerek és alkalmazások</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Rendszerprogramozás</td>
+                <td>IVB478MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/4</td>
+                <td></td>
+                <td>Programozás 3.</td>
+              </tr>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Hálózat és rendszermenedzsment</td>
+                <td>IVB168MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">v/5</td>
+                <td></td>
+                <td>Linux rendszergazda ismeretek</td>
+              </tr>
+              <tr class="5">
+                <td class="text-left font-weight-bold">Távközlő hálózatok</td>
+                <td>IVB169MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/5</td>
+                <td></td>
+                <td></td>
+                <td>IP alapú rendszerek és alkalmazások</td>
+              </tr>
+            </tbody>
+<!-- SZAKDOLGOZAT -->
+            <thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szakdolgozat
+              </th>
+            </thead>
+            <tbody>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Szakdolgozat</td>
+                <td>IVB504MNMI</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">15</td>
+                <td></td>
+              </tr>
+            </tbody>
+<!-- SZABVALL -->
+            <thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szabadon választható tantárgyak
+              </th>
+            </thead>
+            <tbody>
+              <tr class="6">
+                <td class="text-left font-weight-bold">Tantárgy 1.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Tantárgy 2.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+              </tr>
+              <tr class="7">
+                <td class="text-left font-weight-bold">Tantárgy 3.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-secondary text-light">f/4</td>
+                <td></td>
+              </tr>
+            </tbody>
+<!-- SZAKGYAK -->
+            <thead class="bg-light">
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szakmai gyakorlat
+              </th>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+<!-- MADE BY bbrown | FJ58YP -->
+</html>
