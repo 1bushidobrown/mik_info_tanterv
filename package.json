@@ -1,0 +1,10 @@
+{
+  "author": "Drinoczi Balint",
+  "name": "mik_info_tanterv",
+  "version": "1.0.0",
+  "description": "PTE-MIK Mernokinformatikus Bsc tanterv 2017 utani",
+  "homepage": "https://1bushidobrown.github.io/mik_info_tanterv",
+  "scripts": {
+    "deploy": "gh-pages -d tanterv_html"
+  }
+}
