@@ -15,6 +15,10 @@
     <script src="resources/js/script.js"></script>
 	<title>PTE-MIK Mérnökinformatikus Bsc 2017 utáni tanterv</title>
 	<style>
+    html,
+    body {
+      height: 100%;
+    }
 		.table td{
 			padding: 0.3rem;
 		}
@@ -47,6 +51,9 @@
     #rendszm{
       display: none;
     }
+    .sticky-footer {
+      background-color: none;
+    }
 	</style>
   </head>
   <body class="bg-light p-4" style="box-sizing: border-box; font-size: 0.7rem;">
@@ -57,8 +64,7 @@
         <div class="col-12 p-2">
           <a href="tanterv2017.html">          
             <img
-            class="img-fluid"
-            style="height: 150px"
+            class="w-25"
             src="resources/img/mik_logo.jpg"
             alt=""
           /></a>
@@ -108,7 +114,7 @@
             </button>
           </div>
         </div>
-	  </div>
+    </div>
       <div class="row">
         <div class="col-12">
           <table
@@ -116,16 +122,16 @@
           >
             <thead class="thead-dark">
               <tr>
-                <th>Név</th>
-                <th>Kód</th>
-                <th>1.</th>
-                <th>2.</th>
-                <th>3.</th>
-                <th>4.</th>
-                <th>5.</th>
-                <th>6.</th>
-                <th>7.</th>
-                <th>Feltétel</th>
+                <th style="width: 25%">Név</th>
+                <th style="width: 10%">Kód</th>
+                <th style="width: 5%">1.</th>
+                <th style="width: 5%">2.</th>
+                <th style="width: 5%">3.</th>
+                <th style="width: 5%">4.</th>
+                <th style="width: 5%">5.</th>
+                <th style="width: 5%">6.</th>
+                <th style="width: 5%">7.</th>
+                <th style="width: 30%">Feltétel</th>
               </tr>
 			</thead>
 
@@ -133,7 +139,7 @@
 
             <thead class="bg-light">
               <th class="font-weight-lighter text-left text-dark" colspan="10">
-                Természettudományi alapismeretek
+                Természettudományi alapismeretek (össz.: 40kr)
               </th>
             </thead>
             <tbody>
@@ -239,7 +245,7 @@
 
 			<thead class="bg-light">
               <th class="font-weight-lighter text-left text-dark" colspan="10">
-				Gazdasági és humán ismeretek
+				Gazdasági és humán ismeretek (össz.: 18kr)
               </th>
             </thead>
             <tbody>
@@ -321,7 +327,7 @@
 
 			<thead class="bg-light">
               <th class="font-weight-lighter text-left text-dark" colspan="10">
-				Szakmai törzsanyag
+				Szakmai törzsanyag  (össz.: 95kr)
               </th>
             </thead>
             <tbody>
@@ -618,7 +624,8 @@
 <!-- DIFFERENCIALT SZAKMAI ANYAG -->
 
 			<thead class="bg-light">
-              <th class="font-weight-lighter text-left text-dark" colspan="10"> Differenciált szakmai anyag
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> 
+                Differenciált szakmai anyag  (össz.: 30kr)
               </th>
             </thead>
 <!-- INTELLIGENS RENDSZEREK -->
@@ -872,7 +879,7 @@
             </tbody>
 <!-- SZAKDOLGOZAT -->
             <thead class="bg-light">
-              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szakdolgozat
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szakdolgozat  (össz.: 15kr)
               </th>
             </thead>
             <tbody>
@@ -891,7 +898,7 @@
             </tbody>
 <!-- SZABVALL -->
             <thead class="bg-light">
-              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szabadon választható tantárgyak
+              <th class="font-weight-lighter text-left text-dark" colspan="10"> Szabadon választható tantárgyak  (össz.: 12kr)
               </th>
             </thead>
             <tbody>
@@ -940,7 +947,17 @@
           </table>
         </div>
       </div>
+      <div class="row">
+      <div class="col-12">
+        <p>összes kredit: 210 | v: vizsga | f: félévközi jegy</p>
+      </div>
     </div>
+    </div>
+    <footer id="sticky-footer" class="py-4 text-secondary">
+        <div class="container text-center">
+          <small>made by bbrown </small>
+        </div>
+      </footer>
   </body>
-<!-- MADE BY bbrown | FJ58YP -->
+<!-- MADE BY Drinoczi Balint | FJ58YP -->
 </html>
